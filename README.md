@@ -1,7 +1,16 @@
-<a href="https://chat.vercel.ai/">
+https://replit.com/join/livfsybdnt-khumalothulani2
   <img alt="Next.js 14 and App Router-ready AI chatbot." src="app/(chat)/opengraph-image.png">
   <h1 align="center">Chat SDK</h1>
 </a>
+ 
+{
+  "builds": [
+    { "src": "main.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "main.py" }
+  ]
+}
 
 <p align="center">
     Chat SDK is a free, open-source template built with Next.js and the AI SDK that helps you quickly build powerful chatbot applications.
